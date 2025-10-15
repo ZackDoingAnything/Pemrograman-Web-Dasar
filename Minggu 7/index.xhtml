@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>Reservation Hotel Room</title>
+</head>
+
+<body>
+
+    <div id="main-content">
+        <div id="form-column">
+            <h1>Reservation Hotel Room</h1>
+
+            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset style="width: 50%">
+                    <legend>Personal Data</legend>
+                    <ol>
+                        <li>Name</li>
+                        <input type="text" name="name" style="width: 70%" />
+                        <li>Gender</li>
+                        <input type="text" name="gender" style="width: 70%" />
+                        <li>Email Address</li>
+                        <input type="text" name="email" style="width: 70%" />
+                        <li>Telp Number</li>
+                        <input type="text" name="number" style="width: 70%" />
+                    </ol>
+                </fieldset>
+
+
+                <fieldset style="border: 0px; width: 50%;">
+                    <legend>Reservation Room Form</legend>
+                    <ol>
+                        <li>Reservator Name</li>
+                        <input type="text" name="reservator" style="width: 70%" />
+                        <li>Booking Date</li>
+                        <input type="date" name="date" style="width: 70%" />
+                        <li>Room Type</li>
+                        <select name="room" id="">
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                            <option value="presedential">Presedential</option>
+                        </select>
+                        <li>Bed Type</li>
+                        <select name="bed" id="bedtype_select">
+                            <option value="single">Singgle Bed</option>
+                            <option value="double">Double Bed</option>
+                        </select>
+                        <li>Breakfast</li>
+                        <label for="withbreakfast">
+                            <input type="radio" name="breakfast" id="withbreakfast" value="with" checked="checked" />
+                            With Breakfast
+                        </label>
+                        <label for="withoutbreakfast">
+                            <input type="radio" name="breakfast" id="withoutbreakfast" value="without" />
+                            Without Breakfast
+                        </label>
+                    </ol>
+                </fieldset>
+
+                <fieldset style="width: 50%;">
+                    <legend>Payment</legend>
+                    <ol>
+                        <li>Check-in Date</li>
+                        <input type="date" name="checkin" style="width: 70%;" />
+                        <li>Check-out Date</li>
+                        <input type="date" name="checkin" style="width: 70%;" />
+                        <li>Payment Method</li>
+                        <select name="payment" id="payment">
+                            <option value="cash">Cash</option>
+                            <option value="credit">Credit</option>
+                            <option value="debit">Debit</option>
+                            <option value="face">Face Card</option>
+                        </select>
+                    </ol>
+
+                </fieldset>
+
+                <input type="submit" name="submit" id="submit" value="Submit" style="margin: 5px;" />
+
+            </form>
+        </div>
+
+        <div id="reservation-summary">
+            <div class="summary-card">
+                <!-- ini display biar bagus dikasih summary tadi pesannya apa, sekarang masih placeholder karena belum pakai javascript dulu-->
+                <div class="room-image">
+                    <img src="images/deluxe-room.jpg"
+                        alt="Placeholder image of a luxury Mediterranean suite." />
+                </div>
+
+                <div class="summary-details">
+                    <h2>Deluxe Spa Retreat</h2>
+                    <p class="summary-label">Room &amp; Bed Type</p>
+                    <p class="summary-value">Deluxe Room, Double Bed</p>
+
+                    <p class="summary-label">Check-in / Check-out</p>
+                    <p class="summary-value">
+                        Oct 15, 2025 - Oct 16, 2025
+                    </p>
+
+                    <p class="summary-label">Guests</p>
+                    <p class="summary-value">2 Adults, With Breakfast</p>
+
+                    <div class="price-box">
+                        <p class="summary-label">TOTAL (1 Night)</p>
+                        <p class="total-price">3.793.350 IDR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
